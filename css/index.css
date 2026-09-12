@@ -1,0 +1,181 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 60vh;
+  min-height: 400px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(11,19,14,0.3), rgba(11,19,14,0.9));
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+}
+
+.hero-content .eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #d4af37;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: #e2e8f0;
+  max-width: 35rem;
+}
+
+.intro {
+  padding: 5rem 0;
+}
+
+.section-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+  max-width: 45rem;
+}
+
+.intro a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 #d4af37;
+  transition: all 0.2s ease;
+}
+
+.intro a:hover {
+  background: #d4af37;
+  color: #0b130e;
+}
+
+.external-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.external-links a {
+  display: inline-block;
+  background-color: #1e3527;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  box-shadow: none;
+  border: 1px solid #2d4f3b;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.external-links a:hover {
+  background-color: #2e523d;
+  border-color: #d4af37;
+  transform: translateY(-3px);
+  color: #ffffff;
+}
+
+.legends {
+  padding-bottom: 5rem;
+}
+
+.legend-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.legend-card {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #1e3527;
+  background-color: #0e1a13;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.3s ease, box-shadow 0.4s ease;
+}
+
+.legend-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  /* Smooth zoom setup */
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.legend-card .caption {
+  padding: 1.25rem;
+  background: linear-gradient(to top, #060a07 70%, rgba(6,10,7,0));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.legend-card .eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #a3b899;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.legend-card h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-top: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.legend-card:hover {
+  transform: translateY(-8px);
+  border-color: #d4af37;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.legend-card:hover img {
+  transform: scale(1.05);
+}
+
+.legend-card:hover h3 {
+  color: #d4af37;
+}

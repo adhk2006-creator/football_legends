@@ -1,0 +1,140 @@
+.page-intro {
+  padding-block: 2.5rem 0.5rem;
+}
+
+.page-intro p {
+  max-width: 40rem;
+  font-size: 1.05rem;
+}
+
+.contact-layout {
+  padding-block: 1.5rem 3rem;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 1.35rem;
+}
+
+.contact-info dl {
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  font-size: 0.98rem;
+}
+
+.contact-info dt {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+  align-self: start;
+  padding-top: 0.15em;
+}
+
+.contact-info dd {
+  margin: 0;
+}
+
+.contact-form form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 3px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.1rem;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.form-field label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+.form-field input,
+.form-field textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.65em 0.75em;
+  border: 1px solid var(--color-line);
+  border-radius: 2px;
+  background: var(--color-bg);
+  color: var(--color-ink);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 7rem;
+}
+
+.form-note {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-ink-soft);
+  margin-top: -0.4rem;
+}
+
+.attribution {
+  padding-block: 1rem 3.5rem;
+  border-top: 1px dashed var(--color-line);
+}
+
+.attribution h2 {
+  font-size: 1.35rem;
+}
+
+.attribution-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.attribution-table caption {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-ink-soft);
+  margin-bottom: 0.6rem;
+}
+
+.attribution-table th,
+.attribution-table td {
+  text-align: left;
+  padding: 0.6em 0.7em;
+  border-bottom: 1px solid var(--color-line);
+  vertical-align: top;
+}
+
+.attribution-table th {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+  background: #efece0;
+}
+
+.attribution-note {
+  font-size: 0.85rem;
+  color: var(--color-ink-soft);
+  margin-top: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .contact-layout {
+    grid-template-columns: 1fr 1.3fr;
+  }
+}

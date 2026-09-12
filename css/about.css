@@ -1,0 +1,71 @@
+.page-intro {
+  padding-block: 2.5rem 0.5rem;
+}
+
+.page-intro p {
+  max-width: 40rem;
+  font-size: 1.05rem;
+}
+
+.about-section {
+  padding-block: 2.25rem;
+  border-top: 1px dashed var(--color-line);
+}
+
+.about-section .wrap {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about-section figure {
+  margin: 0;
+}
+
+.about-section img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid var(--color-line);
+}
+
+.about-section figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-ink-soft);
+  margin-top: 0.5em;
+}
+
+.about-section .copy h2 {
+  font-size: 1.6rem;
+}
+
+.about-section .copy p {
+  font-size: 1.03rem;
+}
+
+.about-section ul.checklist {
+  padding-left: 1.1em;
+  margin: 1em 0;
+}
+
+.about-section ul.checklist li {
+  margin-bottom: 0.4em;
+}
+
+/* Alternate media side on desktop */
+@media (min-width: 56rem) {
+  .about-section .wrap {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .about-section.media-right .wrap {
+    direction: rtl;
+  }
+
+  .about-section.media-right .wrap > * {
+    direction: ltr;
+  }
+}

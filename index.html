@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Legends | Home</title>
+  <meta name="description" content="Football Legends celebrates the greatest players in the history of the game through photography, stats and stories — starting with Pelé, Messi, Ronaldo and Neymar.">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a class="brand" href="index.html">Football Legends</a>
+
+    <!-- Hidden checkbox that tracks open/closed state -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <!-- Hamburger icon, linked to the checkbox -->
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+
+    <div class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <main id="main">
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 75rem)" srcset="images/hero/hero-football-1920.jpg">
+        <source media="(min-width: 40rem)" srcset="images/hero/hero-football-960.jpg">
+        <img
+          src="images/hero/hero-football-480.jpg"
+          srcset="images/hero/hero-football-480.jpg 480w,
+                  images/hero/hero-football-960.jpg 960w,
+                  images/hero/hero-football-1920.jpg 1920w"
+          sizes="100vw"
+          alt="Silhouetted children playing football on a beach at sunset, with a fishing boat in the background."
+          width="1920" height="640">
+      </picture>
+      <div class="hero-overlay">
+        <div class="wrap hero-content">
+          <span class="eyebrow">Est. 2026 &middot; The dream sport</span>
+          <h1>Football Legends</h1>
+          <p>The story of the beautiful game, told through the players who changed it forever.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="wrap">
+        <div class="intro-col">
+          <h2 class="section-heading">Welcome</h2>
+          <p>
+            From a dusty street kick-about to a packed stadium under floodlights, football is
+            the one game almost everyone on earth has played, watched or argued about. This
+            site is a small tribute to the players who turned that game into something more —
+            an art form, a source of national pride, and, for millions of kids like the ones
+            in the photo above, a reason to run until the sun goes down.
+          </p>
+          <p>
+            Explore the <a href="gallery.html">photo gallery</a> for a look at four of the
+            game's most decorated players, read more <a href="about.html">about the project</a>,
+            or get in touch on the <a href="contact.html">contact page</a>. For the official
+            record books, the links below are a good place to start.
+          </p>
+          <ul class="external-links">
+            <li><a href="https://www.fifa.com" target="_blank" rel="noopener noreferrer">FIFA.com</a></li>
+            <li><a href="https://www.ballondor.com" target="_blank" rel="noopener noreferrer">Ballon d'Or official site</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="legends">
+      <div class="wrap">
+        <h2 class="section-heading">Meet the legends</h2>
+        <ul class="legend-grid">
+          <li>
+            <a class="legend-card" href="gallery.html">
+              <img src="images/grid/messi/messi-960-original.jpg" alt="Lionel Messi photographed celebrating on a backlit display at the FC Barcelona museum, surrounded by Ballon d'Or trophies." width="960" height="720">
+              <div class="caption">
+                <span class="eyebrow">Argentina</span>
+                <h3>Lionel Messi</h3>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="legend-card" href="gallery.html">
+              <img src="images/grid/ronaldo/ronaldo-960-original.jpg" alt="Cristiano Ronaldo celebrating during a Real Madrid match." width="960" height="720">
+              <div class="caption">
+                <span class="eyebrow">Portugal</span>
+                <h3>Cristiano Ronaldo</h3>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="legend-card" href="gallery.html">
+              <img src="images/grid/neymar/neymar-960-original.jpg" alt="Street mural in Rio de Janeiro depicting Neymar against the city skyline." width="960" height="720">
+              <div class="caption">
+                <span class="eyebrow">Brazil</span>
+                <h3>Neymar Jr.</h3>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="legend-card" href="gallery.html">
+              <img src="images/grid/pele/pele-960-original.jpg" alt="Street mural referencing Pelé in Vila Madalena, Brazil." width="960" height="720">
+              <div class="caption">
+                <span class="eyebrow">Brazil</span>
+                <h3>Pelé</h3>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h2>Football Legends</h2>
+          <p>A static, hand-coded HTML &amp; CSS site built to celebrate the greatest
+            players in football history.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact / Info</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-fine">&copy; 2026 Football Legends student project. Image sources and
+        licences are listed on the <a href="contact.html#attribution">Contact / Info page</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

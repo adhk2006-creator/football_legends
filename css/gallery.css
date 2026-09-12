@@ -1,0 +1,78 @@
+.page-intro {
+  padding-block: 2.5rem 1rem;
+}
+
+.page-intro .eyebrow {
+  margin-bottom: 0.75em;
+}
+
+.page-intro p {
+  max-width: 40rem;
+  font-size: 1.05rem;
+}
+
+.photo-grid-wrap {
+  padding-block: 1rem 3.5rem;
+}
+
+.photo-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+.photo-grid figure {
+  margin: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.photo-grid figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background: var(--color-primary-dark);
+  color: #f2efe4;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.55em 0.75em;
+}
+
+.photo-grid figcaption .player-name {
+  font-weight: 600;
+  color: #fff;
+}
+
+.photo-grid figcaption .filter-chip {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 2px;
+  padding: 0.15em 0.5em;
+}
+
+@media (min-width: 48.0625rem) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 75.0625rem) {
+  .photo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
